@@ -9,7 +9,7 @@ template < typename ActivationFunc_t >
 class TrainingNeuron final
 {
 public:
-    TrainingNeuron( size_t t_connections ) : m_outConnections( t_connections ) {}
+    explicit TrainingNeuron( size_t t_connections ) : m_outConnections( t_connections ) {}
 
     void setOutput( float t_value ) { m_outputValue = t_value; }
     float getOutput() const { return m_outputValue; }
